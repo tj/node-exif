@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ npm install visionmedia/node-exif
+    $ npm install exif2
 
 ### Example
 
