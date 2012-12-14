@@ -3,6 +3,10 @@
 
   EXIF extraction with exiftool.
 
+## Installation
+
+    $ npm install visionmedia/node-exif
+
 ### Example
 
 ```js
