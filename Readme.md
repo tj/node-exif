@@ -1,4 +1,3 @@
-
 # exif
 
   EXIF extraction with exiftool.
@@ -10,7 +9,7 @@
 ### Example
 
 ```js
-var exif = require('exif');
+var exif = require('exif2');
 
 exif(file, function(err, obj){
   console.log(obj);
