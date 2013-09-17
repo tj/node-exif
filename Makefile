@@ -4,4 +4,8 @@ test:
 		--require should \
 		--reporter spec
 
-.PHONY: test
+bench:
+	@./node_modules/.bin/matcha \
+		bench/index.js
+
+.PHONY: test bench
