@@ -3,6 +3,9 @@
 
   EXIF extraction with exiftool.
 
+  __NOTE__: use https://github.com/LearnBoost/node-libexif if compiling is not a problem,
+  it uses native bindings and is __much__ faster.
+
 ## Installation
 
     $ npm install exif2
