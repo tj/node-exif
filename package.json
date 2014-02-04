@@ -12,5 +12,9 @@
     "better-assert": "*",
     "matcha": "~0.3.0"
   },
-  "main": "index"
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visionmedia/node-exif.git"
+  }
 }
