@@ -15,7 +15,14 @@ var exec = require('child_process').exec
  */
 
 module.exports = function(file, fn){
-  var cmd = command('exiftool ?', file);
+  var cmd;
+
+  // wget -qO - file | exiftool -fast -
+  if (/^(http|https):\/\//.test(file))
+    cmd = command('wget -qO - ? | exiftool -fast -', file);
+
+  else cmd = command('exiftool ?', file);
+  
   exec(cmd, function(err, str){
     if (err) return fn(err);
     
